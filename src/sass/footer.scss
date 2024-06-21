@@ -1,0 +1,104 @@
+@import 'style.scss';
+
+footer {
+    width: 80%;
+    height: auto;
+    margin: auto;
+    padding: 100px 0 30px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    .logo {
+        display: flex;
+        align-items: center;
+        margin-bottom: 30px;
+        img {
+            width: 40px;
+            margin-right: 8px;
+        }
+        h1 {
+            font-size: 42px;
+            font-weight: bold;
+        }
+    }
+    .two {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        gap: 40px;
+        .info {
+            flex: 2;
+            padding-right: 50px;
+            > div:first-child {
+                line-height: 1.6;
+            }
+            > div {
+                display: flex;
+                align-items: flex-start;
+                margin-bottom: 10px;
+                > img {
+                    margin: 5px 30px 0 0;
+                    width: 18px;
+                }
+                p {
+                    color: $VeryPaleCyan;
+                    font-family: $openSans;
+                    font-weight: 300;
+                    font-size: 14px;
+                }
+            }
+        }
+        ul {
+            flex: 1;
+            li {
+                list-style: none;
+                color: $VeryPaleCyan;
+                font-family: $openSans;
+                font-weight: 300;
+                margin-bottom: 10px;
+                font-size: 17px;
+                cursor: pointer;
+            }
+        }
+        .social {
+            flex: 1;
+            .icon {
+                margin: 0 10px;
+                cursor: pointer;
+            }
+        }
+    }
+    .copyright {
+        align-self: flex-end;
+        color: $VeryPaleCyan;
+        font-family: $openSans;
+        font-weight: 300;
+        font-size: 12px;
+        margin-top: 20px;
+    }
+}
+@media (max-width: 700px) {
+    footer {
+        width: 95%;
+        .logo {
+            img {
+                width: 30px;
+            }
+            h1 {
+                font-size: 30px;
+            }
+        }
+        .two {
+            flex-direction: column;
+            .info {
+                padding: 0;
+            }
+            .social {
+                align-self: center;
+            }
+        }
+        .copyright {
+            align-self: center;
+        }
+    }
+}

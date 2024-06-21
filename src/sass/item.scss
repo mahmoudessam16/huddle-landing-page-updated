@@ -1,0 +1,125 @@
+@import 'style.scss';
+
+.item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+    width: 95%;
+    margin: 20px auto 40px auto;
+    box-shadow: 0px 0px 15px -9px #aaa;
+    border-radius: 20px;
+    padding: 40px 20px 40px 100px;
+    .info {
+        flex: 1.4;
+        h2 {
+            color: $VeryDarkCyan;
+            font-family: $poppins;
+        }
+        p {
+            font-family: $openSans;
+            margin: 20px 0;
+            width: 450px;
+            color: $GrayishBlue;
+            line-height: 1.5;
+            font-weight: 500;
+        }
+    }
+    .image {
+        flex: 1;
+        img {
+            max-width: 100%;
+        }
+    }
+}
+
+.ready {
+    position: absolute;
+    bottom: -70px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60%;
+    text-align: center;
+    padding: 40px 0;
+    background-color: white;
+    box-shadow: 0px 0px 15px 0px #eee;
+    border-radius: 20px;
+    h3 {
+        font-size: 28px;
+        color: $VeryDarkCyan;
+    }
+    button {
+        background-color: $Pink;
+        border: none;
+        width: 50%;
+        padding: 20px 0;
+        border-radius: 30px;
+        margin-top: 20px;
+        color: $VeryPaleCyan;
+        font-weight: 500;
+        letter-spacing: 1px;
+        box-shadow: 0px 0px 10px -4px $VeryDarkCyan;
+        cursor: pointer;
+    }
+}
+
+
+@media (max-width: 1000px) {
+    .ready {
+        width: 70%;
+        h3 {
+            font-size: 25px;
+        }
+        button {
+            width: 60%;
+        }
+    } 
+}
+@media (max-width: 700px) {
+    .item {
+        flex-direction: column-reverse;
+        .info {
+            p {
+                width: 100%;
+            }
+        }
+    }
+    .ready {
+        width: 100%;
+        h3 {
+            font-size: 22px;
+        }
+        button {
+            width: 80%;
+        }
+    } 
+}
+@media (max-width: 400px) {
+    .item {
+        flex-direction: column-reverse !important;
+        padding: 40px;
+        text-align: center;
+        .info {
+            h2 {
+                font-size: 22px;
+            }
+            p {
+                width: 100%;
+                font-size: 14px;
+                margin: 10px 0;
+            }
+        }
+    }
+    .ready {
+        width: 100%;
+        h3 {
+            font-size: 16px;
+        }
+        button {
+            width: 50%;
+            padding: 10px;
+            font-size: 12px;
+            letter-spacing: 0.1px;
+        }
+    } 
+}
