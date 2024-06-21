@@ -1,4 +1,4 @@
-# Getting Started with Create React App
+# Frontend Mentor - Huddle landing page with alternating feature blocks
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+![Design preview for the Huddle landing page with alternating feature blocks coding challenge](./design/desktop-preview.jpg)
 
